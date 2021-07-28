@@ -1,7 +1,7 @@
 ﻿
 namespace chem_calc
 {
-    partial class Form1
+    partial class chem_calc
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,24 +29,24 @@ namespace chem_calc
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_chem0_Reagent = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_chem0_CASNum = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.tb_chem0_mw = new System.Windows.Forms.TextBox();
+            this.tb_chem0_eq = new System.Windows.Forms.TextBox();
+            this.tb_chem0_mol = new System.Windows.Forms.TextBox();
+            this.tb_chem0_weight = new System.Windows.Forms.TextBox();
+            this.tb_chem0_density = new System.Windows.Forms.TextBox();
+            this.tb_chem0_Molarity = new System.Windows.Forms.TextBox();
+            this.tb_chem0_vol = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -83,15 +83,25 @@ namespace chem_calc
             this.textBox43 = new System.Windows.Forms.TextBox();
             this.textBox44 = new System.Windows.Forms.TextBox();
             this.textBox45 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox46 = new System.Windows.Forms.TextBox();
+            this.textBox47 = new System.Windows.Forms.TextBox();
+            this.textBox48 = new System.Windows.Forms.TextBox();
+            this.textBox49 = new System.Windows.Forms.TextBox();
+            this.textBox50 = new System.Windows.Forms.TextBox();
+            this.textBox51 = new System.Windows.Forms.TextBox();
+            this.textBox52 = new System.Windows.Forms.TextBox();
+            this.textBox53 = new System.Windows.Forms.TextBox();
+            this.textBox54 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // textBox1
+            // tb_chem0_Reagent
             // 
-            this.textBox1.Location = new System.Drawing.Point(51, 31);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(92, 27);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            this.tb_chem0_Reagent.Location = new System.Drawing.Point(51, 31);
+            this.tb_chem0_Reagent.Name = "tb_chem0_Reagent";
+            this.tb_chem0_Reagent.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_Reagent.TabIndex = 0;
+            this.tb_chem0_Reagent.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_Reagent_KeyDown);
             // 
             // label1
             // 
@@ -147,12 +157,13 @@ namespace chem_calc
             this.label6.TabIndex = 11;
             this.label6.Text = "weight";
             // 
-            // textBox2
+            // tb_chem0_CASNum
             // 
-            this.textBox2.Location = new System.Drawing.Point(149, 31);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(92, 27);
-            this.textBox2.TabIndex = 12;
+            this.tb_chem0_CASNum.Location = new System.Drawing.Point(149, 31);
+            this.tb_chem0_CASNum.Name = "tb_chem0_CASNum";
+            this.tb_chem0_CASNum.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_CASNum.TabIndex = 12;
+            this.tb_chem0_CASNum.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem_CASNum_KeyDown);
             // 
             // label7
             // 
@@ -181,55 +192,62 @@ namespace chem_calc
             this.label9.TabIndex = 15;
             this.label9.Text = "vol.";
             // 
-            // textBox3
+            // tb_chem0_mw
             // 
-            this.textBox3.Location = new System.Drawing.Point(247, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(92, 27);
-            this.textBox3.TabIndex = 16;
+            this.tb_chem0_mw.Location = new System.Drawing.Point(247, 31);
+            this.tb_chem0_mw.Name = "tb_chem0_mw";
+            this.tb_chem0_mw.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_mw.TabIndex = 16;
+            this.tb_chem0_mw.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_mw_KeyDown);
             // 
-            // textBox4
+            // tb_chem0_eq
             // 
-            this.textBox4.Location = new System.Drawing.Point(345, 31);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(92, 27);
-            this.textBox4.TabIndex = 17;
-            this.textBox4.Text = "1";
+            this.tb_chem0_eq.Location = new System.Drawing.Point(345, 31);
+            this.tb_chem0_eq.Name = "tb_chem0_eq";
+            this.tb_chem0_eq.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_eq.TabIndex = 17;
+            this.tb_chem0_eq.Text = "1";
+            this.tb_chem0_eq.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_eq_KeyDown);
             // 
-            // textBox5
+            // tb_chem0_mol
             // 
-            this.textBox5.Location = new System.Drawing.Point(443, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(92, 27);
-            this.textBox5.TabIndex = 18;
+            this.tb_chem0_mol.Location = new System.Drawing.Point(443, 31);
+            this.tb_chem0_mol.Name = "tb_chem0_mol";
+            this.tb_chem0_mol.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_mol.TabIndex = 18;
+            this.tb_chem0_mol.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_mol_KeyDown);
             // 
-            // textBox6
+            // tb_chem0_weight
             // 
-            this.textBox6.Location = new System.Drawing.Point(541, 31);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(92, 27);
-            this.textBox6.TabIndex = 19;
+            this.tb_chem0_weight.Location = new System.Drawing.Point(541, 31);
+            this.tb_chem0_weight.Name = "tb_chem0_weight";
+            this.tb_chem0_weight.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_weight.TabIndex = 19;
+            this.tb_chem0_weight.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_weight_KeyDown);
             // 
-            // textBox7
+            // tb_chem0_density
             // 
-            this.textBox7.Location = new System.Drawing.Point(639, 31);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(92, 27);
-            this.textBox7.TabIndex = 20;
+            this.tb_chem0_density.Location = new System.Drawing.Point(639, 31);
+            this.tb_chem0_density.Name = "tb_chem0_density";
+            this.tb_chem0_density.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_density.TabIndex = 20;
+            this.tb_chem0_density.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_density_KeyDown);
             // 
-            // textBox8
+            // tb_chem0_Molarity
             // 
-            this.textBox8.Location = new System.Drawing.Point(737, 31);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(92, 27);
-            this.textBox8.TabIndex = 21;
+            this.tb_chem0_Molarity.Location = new System.Drawing.Point(737, 31);
+            this.tb_chem0_Molarity.Name = "tb_chem0_Molarity";
+            this.tb_chem0_Molarity.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_Molarity.TabIndex = 21;
+            this.tb_chem0_Molarity.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_Molarity_KeyDown);
             // 
-            // textBox9
+            // tb_chem0_vol
             // 
-            this.textBox9.Location = new System.Drawing.Point(835, 31);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(92, 27);
-            this.textBox9.TabIndex = 22;
+            this.tb_chem0_vol.Location = new System.Drawing.Point(835, 31);
+            this.tb_chem0_vol.Name = "tb_chem0_vol";
+            this.tb_chem0_vol.Size = new System.Drawing.Size(92, 27);
+            this.tb_chem0_vol.TabIndex = 22;
+            this.tb_chem0_vol.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tb_chem0_vol_KeyDown);
             // 
             // textBox10
             // 
@@ -483,11 +501,93 @@ namespace chem_calc
             this.textBox45.Size = new System.Drawing.Size(92, 27);
             this.textBox45.TabIndex = 50;
             // 
-            // Form1
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(51, 302);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(98, 28);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "파일로 저장";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // textBox46
+            // 
+            this.textBox46.Location = new System.Drawing.Point(835, 196);
+            this.textBox46.Name = "textBox46";
+            this.textBox46.Size = new System.Drawing.Size(92, 27);
+            this.textBox46.TabIndex = 68;
+            // 
+            // textBox47
+            // 
+            this.textBox47.Location = new System.Drawing.Point(737, 196);
+            this.textBox47.Name = "textBox47";
+            this.textBox47.Size = new System.Drawing.Size(92, 27);
+            this.textBox47.TabIndex = 67;
+            // 
+            // textBox48
+            // 
+            this.textBox48.Location = new System.Drawing.Point(639, 196);
+            this.textBox48.Name = "textBox48";
+            this.textBox48.Size = new System.Drawing.Size(92, 27);
+            this.textBox48.TabIndex = 66;
+            // 
+            // textBox49
+            // 
+            this.textBox49.Location = new System.Drawing.Point(541, 196);
+            this.textBox49.Name = "textBox49";
+            this.textBox49.Size = new System.Drawing.Size(92, 27);
+            this.textBox49.TabIndex = 65;
+            // 
+            // textBox50
+            // 
+            this.textBox50.Location = new System.Drawing.Point(443, 196);
+            this.textBox50.Name = "textBox50";
+            this.textBox50.Size = new System.Drawing.Size(92, 27);
+            this.textBox50.TabIndex = 64;
+            // 
+            // textBox51
+            // 
+            this.textBox51.Location = new System.Drawing.Point(345, 196);
+            this.textBox51.Name = "textBox51";
+            this.textBox51.Size = new System.Drawing.Size(92, 27);
+            this.textBox51.TabIndex = 63;
+            // 
+            // textBox52
+            // 
+            this.textBox52.Location = new System.Drawing.Point(247, 196);
+            this.textBox52.Name = "textBox52";
+            this.textBox52.Size = new System.Drawing.Size(92, 27);
+            this.textBox52.TabIndex = 62;
+            // 
+            // textBox53
+            // 
+            this.textBox53.Location = new System.Drawing.Point(149, 196);
+            this.textBox53.Name = "textBox53";
+            this.textBox53.Size = new System.Drawing.Size(92, 27);
+            this.textBox53.TabIndex = 61;
+            // 
+            // textBox54
+            // 
+            this.textBox54.Location = new System.Drawing.Point(51, 196);
+            this.textBox54.Name = "textBox54";
+            this.textBox54.Size = new System.Drawing.Size(92, 27);
+            this.textBox54.TabIndex = 60;
+            // 
+            // chem_calc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1091, 450);
+            this.Controls.Add(this.textBox46);
+            this.Controls.Add(this.textBox47);
+            this.Controls.Add(this.textBox48);
+            this.Controls.Add(this.textBox49);
+            this.Controls.Add(this.textBox50);
+            this.Controls.Add(this.textBox51);
+            this.Controls.Add(this.textBox52);
+            this.Controls.Add(this.textBox53);
+            this.Controls.Add(this.textBox54);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox37);
             this.Controls.Add(this.textBox38);
             this.Controls.Add(this.textBox39);
@@ -524,25 +624,25 @@ namespace chem_calc
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox17);
             this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.tb_chem0_vol);
+            this.Controls.Add(this.tb_chem0_Molarity);
+            this.Controls.Add(this.tb_chem0_density);
+            this.Controls.Add(this.tb_chem0_weight);
+            this.Controls.Add(this.tb_chem0_mol);
+            this.Controls.Add(this.tb_chem0_eq);
+            this.Controls.Add(this.tb_chem0_mw);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tb_chem0_CASNum);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Controls.Add(this.tb_chem0_Reagent);
+            this.Name = "chem_calc";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -551,24 +651,24 @@ namespace chem_calc
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_chem0_Reagent;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_chem0_CASNum;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox tb_chem0_mw;
+        private System.Windows.Forms.TextBox tb_chem0_eq;
+        private System.Windows.Forms.TextBox tb_chem0_mol;
+        private System.Windows.Forms.TextBox tb_chem0_weight;
+        private System.Windows.Forms.TextBox tb_chem0_density;
+        private System.Windows.Forms.TextBox tb_chem0_Molarity;
+        private System.Windows.Forms.TextBox tb_chem0_vol;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox12;
@@ -605,6 +705,16 @@ namespace chem_calc
         private System.Windows.Forms.TextBox textBox43;
         private System.Windows.Forms.TextBox textBox44;
         private System.Windows.Forms.TextBox textBox45;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox46;
+        private System.Windows.Forms.TextBox textBox47;
+        private System.Windows.Forms.TextBox textBox48;
+        private System.Windows.Forms.TextBox textBox49;
+        private System.Windows.Forms.TextBox textBox50;
+        private System.Windows.Forms.TextBox textBox51;
+        private System.Windows.Forms.TextBox textBox52;
+        private System.Windows.Forms.TextBox textBox53;
+        private System.Windows.Forms.TextBox textBox54;
     }
 }
 
